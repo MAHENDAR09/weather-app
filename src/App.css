@@ -1,0 +1,141 @@
+/* Base app container */
+.weather-app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.8s ease;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Default background */
+.default-bg {
+  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+}
+
+/* Hot (red/orange gradient) */
+.hot-bg {
+  background: linear-gradient(to bottom, #ff512f, #dd2476);
+}
+
+/* Medium (yellow/blue gradient) */
+.medium-bg {
+  background: linear-gradient(to bottom, #f7971e, #ffd200);
+}
+
+/* Cool (blue gradient) */
+.cool-bg {
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+}
+
+/* Weather box styling */
+.weather-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.weather-box h1 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Input styling */
+.weather-box input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.weather-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0078ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.weather-box button:hover {
+  background: #005bb5;
+}
+
+/* Error text */
+.error {
+  color: #ff4d4d;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Weather info display */
+.weather-info {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+/* App heading style when no weather */
+.app {
+  color: black;
+}
+
+/* 📱 Mobile responsiveness */
+/* @media (max-width: 480px) {
+  .weather-box {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .weather-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .weather-box input {
+    font-size: 0.9rem;
+  }
+
+  .weather-box button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .weather-info {
+    font-size: 0.9rem;
+  }
+}
+
+
+📱 Tablet responsiveness */
+/* @media (max-width: 768px) {
+  .weather-box h1 {
+    font-size: 1.3rem;
+  }
+
+  .weather-info {
+    font-size: 0.95rem;
+  }
+} */
+
+
+
+
